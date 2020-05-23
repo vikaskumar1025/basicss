@@ -63,6 +63,24 @@ extract($_SESSION);
 			  <i class="fas fa-fw fa-tachometer-alt"></i>
 			  <span>Dashboard</span></a>
 		  </li>
+
+		  <li class="nav-item">
+          			<a class="nav-link" href="studentrecord.php">
+          			  <i class="fas fa-fw fa-tachometer-alt"></i>
+          			  <span>Add Student</span></a>
+          		  </li>
+
+          		  <li class="nav-item">
+                  			<a class="nav-link" href="bookrec.php">
+                  			  <i class="fas fa-fw fa-tachometer-alt"></i>
+                  			  <span>Add books</span></a>
+                  		  </li>
+
+                  		  <li class="nav-item">
+                          			<a class="nav-link" href="bookissued.php">
+                          			  <i class="fas fa-fw fa-tachometer-alt"></i>
+                          			  <span>books Issued</span></a>
+                          		  </li>
 <hr class="sidebar-divider my-0">
 	<!-- Nav Item - Home  Menu -->
 		  <li class="nav-item">
