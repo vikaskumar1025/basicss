@@ -93,7 +93,7 @@ extract($_SESSION);
     			<div id="ss" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
     			  <div class="bg-white py-2 collapse-inner rounded">
     				<h6 class="collapse-header">Home :</h6>
-    				<a class="collapse-item" href="addschool.php">Add Sechulde</a>
+    				<a class="collapse-item" href="schedule.php">Add Schedule</a>
     				<a class="collapse-item" href="invoice.php">Generate Invoice</a>
 
     			  </div>
