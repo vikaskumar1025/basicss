@@ -1,4 +1,8 @@
-<?php include_once('header.php')  ?>
+<?php include_once('header.php');
+
+
+
+?>
 
 <style>
 
@@ -12,6 +16,7 @@ padding-bottom:15px
 
 </style>
 <div class="container-fluid">
+<form action="" method="POST">
                <div class="row">
                     <div class="col-sm-3">
                     </div>
@@ -19,7 +24,8 @@ padding-bottom:15px
                         <h4 style="color:red;">Power Station</h4>
                     </div>
                      <div class="col-sm-3">
-                          <input class="form-control" type="text" name="powerstation" />
+                            <input class="form-control" type="hidden" value="1" name="powerhouse_id" />
+                          <input class="form-control" type="text" name="power_station" />
                      </div>
 
                </div>
@@ -44,7 +50,7 @@ padding-bottom:15px
                         <h4 style="color:red;">Power Station Code</h4>
                     </div>
                      <div class="col-sm-3">
-                          <input class="form-control" type="text" name="powerstationcode" />
+                          <input class="form-control" type="text" name="power_station_code" />
                      </div>
                </div>
                <div class="row">
@@ -92,7 +98,7 @@ padding-bottom:15px
 			<h4 style="color:red;">Start</h4>
 		</div>
 		<div class="col-sm-3">
-			<input class="form-control" name="schedulestart" />
+			<input class="form-control" name="start" />
 		</div>
 
 	</div>
@@ -105,7 +111,7 @@ padding-bottom:15px
 			<h4 style="color:red;">End</h4>
 		</div>
 		<div class="col-sm-3">
-			<input class="form-control" name="scheduleend" />
+			<input class="form-control" name="end" />
 		</div>
 	</div>
 	    <div class="row">
@@ -116,9 +122,10 @@ padding-bottom:15px
 
     		</div>
     		<div class="col-sm-3">
-    			<input name="schedulebtn" class="btn btn-success" value="Add" />
+    			<button class="btn btn-success">Add</button>
     		</div>
     	</div>
+    	</form>
 </div>
 
         <!-- /.container-fluid -->
