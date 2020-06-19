@@ -8,6 +8,7 @@ if(isset($power_station)) {
 insert($tablename);
 }
 
+$record=select($tablename);
 ?>
 
 <style>
@@ -86,8 +87,74 @@ padding-bottom:15px
 			</div>
 		</div>
 	</form>
+	
+	
+	
+<!----------------Start Schedule Data Table------------------------>
+
+	<div class="row">
+		<div class="table-responsive">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Powerhouse ID</th>
+						<th>Power Station</th>
+						<th>Power Station Code</th>
+						<th>Date</th>
+						<th>Start</th>
+						<th>End</th>
+						<th>Hours</th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+					if(count($record))
+					{
+						foreach($record as $row)
+						{
+							$id = $row['id'];
+							$powerhouse_id = $row['powerhouse_id'];
+							$power_station = $row['power_station'];
+							$power_station_code = $row['power_station_code'];
+							$date = $row['date'];
+							$start = $row['start'];
+							$end = $row['end'];
+							$hours = $row['hours'];
+							echo "<tr>
+								<td>$id</td>
+								<td>$powerhouse_id</td>
+								<td>$power_station</td>
+								<td>$power_station_code</td>
+								<td>$date</td>
+								<td>$start</td>
+								<td>$end</td>
+								<td>$hours</td>
+							</tr>";
+						}
+					}
+					else
+					{
+						echo '<tr>
+							<td colspan="8"><center><p>Data Not Found</p></center></td>
+							</tr>';
+					}
+					?>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+<!----------------End Schedule Data Table------------------------>
+	
+	
+	
 </div>
 <!---------------Body Start Schedule Form To add Schedule------------->
+
+
+
+
 
 
 
