@@ -3,7 +3,7 @@ include('loginsession.php');
 include('dbconnection.php');
 include("test.php");
 extract($_SESSION);
-	
+extract($_REQUEST);
 ?>
 
 
