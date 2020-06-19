@@ -175,9 +175,9 @@ $(document).ready(function (e) {
                 processData:false,
                 success: function(data)
                 {
-                alert(data);
+                alert("");
 
-             //   window.location.href="<?php echo $pagename ?>";
+               window.location.href="<?php echo $pagename ?>";
 
                 },
 
