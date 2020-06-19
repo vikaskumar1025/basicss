@@ -1,150 +1,99 @@
-<?php include_once('header.php');
-
+<?php
+include_once('header.php');
 $tablename="schedule";
 $pagename="schedule.php";
 
 
-if(isset($bookname)) {
+if(isset($power_station)) {
 insert($tablename);
 }
 
 ?>
 
 <style>
-
-
 .row{
 
 padding-bottom:15px
 
 }
-
-
 </style>
-<div class="container-fluid">
-<form action="" method="POST">
-               <div class="row">
-                    <div class="col-sm-3">
-                    </div>
-                    <div class="col-sm-3">
-                        <h4 style="color:red;">Power Station</h4>
-                    </div>
-                     <div class="col-sm-3">
-                            <input class="form-control" type="hidden" value="1" name="powerhouse_id" />
-                          <input class="form-control" type="text" name="power_station" />
-                     </div>
-
-               </div>
-               <div class="row">
-               </div>
-               <div class="row">
-               </div>
-               <div class="row">
-                              </div>
-                              <div class="row">
-                              </div>
 
 
+
+<!---------------Body Start Schedule Form To add Schedule------------->
+<div class="container">
+	<form action="" id="myform" method="POST">
+		<div class="row">
+			<div class="col-sm-4">
+			</div>
+			
+			<div class="col-sm-4">
+				<img src="images/schedule.png" width=100% />
+			</div>
+		</div>
+		
+		
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="form-group">
+					<p>Power Station</p>
+					<input class="form-control" type="hidden" value="1" name="powerhouse_id" />
+					<input class="form-control" type="text" name="power_station" />
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="form-group">
+					<p>Power Station Code</p>
+					<input class="form-control" type="text" name="power_station_code" />
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="form-group">
+					<p>Select Date</p>
+					<input class="form-control" type="date" name="date" />
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="form-group">
+					<p>Start</p>
+					<input type="time" class="form-control" name="start" />
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="form-group">
+					<p>End</p>
+					<input type="time" class="form-control" name="end" />
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="form-group">
+					<p>Hours</p>
+					<input class="form-control" name="hours" />
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="form-group">
+					<button type="submit" class="btn btn-success">Add</button>
+				</div>
+			</div>
+		</div>
+	</form>
 </div>
+<!---------------Body Start Schedule Form To add Schedule------------->
 
 
-<div class="container-fluid">
-               <div class="row">
-                    <div class="col-sm-3">
-                    </div>
-                    <div class="col-sm-3">
-                        <h4 style="color:red;">Power Station Code</h4>
-                    </div>
-                     <div class="col-sm-3">
-                          <input class="form-control" type="text" name="power_station_code" />
-                     </div>
-               </div>
-               <div class="row">
-               </div>
-               <div class="row">
-               </div>
-               <div class="row">
-                              </div>
-                              <div class="row">
-                              </div>
 
 
-</div>
 
 
-<div class="container-fluid">
-               <div class="row">
-                    <div class="col-sm-3">
-                    </div>
-                    <div class="col-sm-3">
-                        <h4 style="color:red;">Select Date</h4>
-                    </div>
-                     <div class="col-sm-3">
-                          <input class="form-control" type="date" name="date" />
-                     </div>
-               </div>
-               <div class="row">
-               </div>
-               <div class="row">
-               </div>
-               <div class="row">
-                              </div>
-                              <div class="row">
-                              </div>
-
-
-</div>
-
-<div class="containder-fluid">
-	<div class="row">
-		<div class="col-sm-3">
-
-		</div>
-		<div class="col-sm-3">
-			<h4 style="color:red;">Start</h4>
-		</div>
-		<div class="col-sm-3">
-			<input class="form-control" name="start" />
-		</div>
-
-	</div>
-
-	<div class="row">
-		<div class="col-sm-3">
-
-		</div>
-		<div class="col-sm-3">
-			<h4 style="color:red;">End</h4>
-		</div>
-		<div class="col-sm-3">
-			<input class="form-control" name="end" />
-		</div>
-	</div>
-	<div class="row">
-    		<div class="col-sm-3">
-
-    		</div>
-    		<div class="col-sm-3">
-    			<h4 style="color:red;">Hours</h4>
-    		</div>
-    		<div class="col-sm-3">
-    			<input class="form-control" name="hours" />
-    		</div>
-    	</div>
-	    <div class="row">
-    		<div class="col-sm-3">
-
-    		</div>
-    		<div class="col-sm-3">
-
-    		</div>
-    		<div class="col-sm-3">
-    			<button class="btn btn-success">Add</button>
-    		</div>
-    	</div>
-
-    	</form>
-</div>
 <script type="text/javascript">
 $(document).ready(function (e) {
     $("#myform").on('submit',(function (e){
@@ -159,9 +108,9 @@ $(document).ready(function (e) {
                 processData:false,
                 success: function(data)
                 {
-                alert("Data Inserted !");
+                alert(data);
 
-                window.location.href="<?php echo $pagename ?>";
+             //   window.location.href="<?php echo $pagename ?>";
 
                 },
 
