@@ -175,7 +175,7 @@ $(document).ready(function (e) {
                 processData:false,
                 success: function(data)
                 {
-                alert("");
+                alert("Schedule Added Successfully..!");
 
                window.location.href="<?php echo $pagename ?>";
 
