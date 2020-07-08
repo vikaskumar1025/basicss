@@ -17,7 +17,7 @@ include ("dbconnection.php");
 				}
 				$query="insert into $tablename values($valnew)";
 				$sql =$GLOBALS['conn']->prepare ($query);	
-				echo $query;
+				//echo $query;
 				$sql->execute() or die(print_r($sql->errorInfo(), true));
 				echo "<script>alert('Data inseted Successfully')</script>";
 }

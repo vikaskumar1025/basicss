@@ -80,6 +80,25 @@ extract($_REQUEST);
 			  </div>
 			</div>
 		  </li>
+<!----add item handa---->
+<hr class="sidebar-divider my-0">
+	<!-- Nav Item - Home  Menu -->
+		  <li class="nav-item">
+				<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="home">
+				  <i class="fas fa-fw fa-cog"></i>
+				  <span>handa</span>
+				</a>
+			<div id="home" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+			  <div class="bg-white py-2 collapse-inner rounded">
+				<h6 class="collapse-header">handa :</h6>
+				<a class="collapse-item" href="addschool.php">Add School</a>
+				<a class="collapse-item" href="invoice.php">Generate Invoice</a>
+
+			  </div>
+			</div>
+		  </li>
+
+
 
 
 
@@ -100,6 +119,11 @@ extract($_REQUEST);
     			  </div>
     			</div>
     		  </li>
+
+
+
+
+
 
 
 
@@ -133,6 +157,12 @@ extract($_REQUEST);
 
           <!-- Sidebar Toggle (Topbar) -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+
+<!----add toggle close button handa----->
+ <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
 
