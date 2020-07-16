@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 include 'dbconnection.php';
 ini_set('display_errors', 1);
@@ -10,7 +10,7 @@ $response = array();
 //$response["area"] = array();
 
 
-	$sql = $conn->prepare("SELECT * FROM booksrecord WHERE uid='$id'");
+	$sql = $conn->prepare("UPDATE test WHERE uid='$id'");
 
 	$sql->execute();
 	
