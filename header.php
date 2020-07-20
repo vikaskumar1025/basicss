@@ -64,9 +64,10 @@ extract($_REQUEST);
 			  <span>Dashboard</span></a>
 		  </li>
 
-<hr class="sidebar-divider my-0">
+
+<!--hr class="sidebar-divider my-0">
 	<!-- Nav Item - Home  Menu -->
-		  <li class="nav-item">
+		  <!--li class="nav-item">
 				<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="home">
 				  <i class="fas fa-fw fa-cog"></i>
 				  <span>Home</span>
@@ -79,51 +80,7 @@ extract($_REQUEST);
 				
 			  </div>
 			</div>
-		  </li>
-<!----add item handa---->
-<hr class="sidebar-divider my-0">
-	<!-- Nav Item - Home  Menu -->
-		  <li class="nav-item">
-				<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="home">
-				  <i class="fas fa-fw fa-cog"></i>
-				  <span>handa</span>
-				</a>
-			<div id="home" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-			  <div class="bg-white py-2 collapse-inner rounded">
-				<h6 class="collapse-header">handa :</h6>
-				<a class="collapse-item" href="addschool.php">Add School</a>
-				<a class="collapse-item" href="invoice.php">Generate Invoice</a>
-
-			  </div>
-			</div>
-		  </li>
-
-
-
-
-
-	<hr class="sidebar-divider my-0">
-    	<!-- Nav Item - Home  Menu -->
-    		  <li class="nav-item">
-    				<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#ss" aria-expanded="true" aria-controls="home">
-    				  <i class="fas fa-fw fa-cog"></i>
-    				  <span>Schedule</span>
-
-    				</a>
-    			<div id="ss" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-    			  <div class="bg-white py-2 collapse-inner rounded">
-    				<h6 class="collapse-header">Home :</h6>
-    				<a class="collapse-item" href="schedule.php">Add Schedule</a>
-    				<a class="collapse-item" href="invoice.php">Generate Invoice</a>
-
-    			  </div>
-    			</div>
-    		  </li>
-
-
-
-
-
+		  </li-->
 
 
 
